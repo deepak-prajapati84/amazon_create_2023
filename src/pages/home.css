@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height:100px;
+    background: #232f3e;
+}
+.d_header_top{
+    height: 60px;
+    background:#131921;
+}
+
+.d_main{
+    height: 5000px;
+    background: #e3e6e6;
+}
+.d_main_carusel{
+    height:613px;
+    position: relative;
+    border:orange 1px solid;
+}
+.btn_icon{
+    height: 250px;
+}
+.d_main_2{
+    height: 420px;
+    position:absolute;
+    top:0;
+    left:0;
+    margin-top:252px;
+    z-index: 3;
+    background: rgb(88, 86, 86);
+}
+
+footer{
+    height:200px;
+    background:#131a22;
+}
