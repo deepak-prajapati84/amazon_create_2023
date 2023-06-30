@@ -15,7 +15,7 @@ function Home() {
                 <div className="d_header_bottom"></div>
             </header>
             <div className="d_main">
-                <div className="d_main_carusel">
+                <div className="d_main_top position-relative">
                     <div id="carouselExample" className="carousel slide">
                         <div className="carousel-inner">
                             <div className="carousel-item active">
@@ -43,8 +43,23 @@ function Home() {
                             <span className="visually-hidden">Next</span>
                         </button>
                     </div>
-                    <div className="d_main_2 w-100">
-                    
+                    <div className="position-absolute d_main_bottom">
+                            <div className="row d_main_bottom_1 main_d_bottom">
+                                <div className="col">A</div>
+                                <div className="col">B</div>
+                                <div className="col">C</div>
+                            </div>
+                            <div className="row d_main_bottom_2 main_com_margin main_d_bottom">
+                            <div className="col">A</div>
+                                <div className="col">B</div>
+                                <div className="col">C</div>
+                            </div>
+                            <div className="row d_main_bottom_3 main_d_bottom main_com_margin">
+                                <div className="col">A</div>
+                                <div className="col">B</div>
+                                <div className="col">C</div>
+                            </div>
+                            <div className="d_main_bottom_4 main_com_margin"></div>
                     </div>
                 </div>
             </div>
