@@ -60,15 +60,71 @@ header{
     padding: 0;
 }
 .d_main_bottom_4{
-    height:342px;
+    height:366px;
     background: #ffffff;
     border: 1px solid red;
+}
+.img_Cont{
+    height:306px;
+    border: 1px solid green;
+}
+
+.img_Cont>div{
+    border: 1px solid yellow;
+}
+
+.button_next_prev{
+    background:#e0dede;
+    width:4%;
+    height:6em;
+    top:105px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #000;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #000;
+}
+
+.cmn_button_link{
+    text-decoration: none;
+    /*margin-bottom:5px;
+    margin-top: 17px;
+    margin-left:20px;
+    */
+    margin:17px 0px 5px 18px;
+}
+
+.cmn_button_link:hover{
+    text-decoration:underline;
+    color:red;
 }
 
 .d_main_com_5_6{
     height:286px;
     margin-top: 20px;
 }
+.img_Cont2{
+    height:230px;
+    border: 1px solid red;
+}
+
 .d_main_bottom_5{
     border:1px solid blue;
     background: #ffffff;
