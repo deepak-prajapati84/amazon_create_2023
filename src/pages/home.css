@@ -13,6 +13,16 @@ header{
     background:#131921;
 }
 
+.d_header_top>button{
+    color:white;
+    margin-left: 7px;
+}
+
+.d_header_top>button:hover{
+    border:1px solid #fff;
+    color:white;
+}
+
 .d_main{
     height: 5899px;
     background: #e3e6e6;

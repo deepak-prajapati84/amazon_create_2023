@@ -5,13 +5,27 @@ import img2 from "../sliders/imgs/3.jpg"
 import img3 from "../sliders/imgs/4.jpg"
 import img4 from "../sliders/imgs/5.jpg"
 import img5 from "../sliders/imgs/6.jpg"
+import logo from '../sliders/imgs/2.png'
 
 
 function Home() {
     return (
         <>
             <header className="">
-                <div className="d_header_top"></div>
+                <div className="d_header_top p-1">
+                    <button className="btn h-100" style={{'width':'9%'}}>
+                        <img src={logo} className="img-fluid align-baseline logo_img w-100" />
+                    </button>
+                    <button className="btn h-100 lh-1 p-0" style={{'width':'12%'}}>
+                        Hello
+                        <span className="fw-bolder d-block">Select <span className="">your</span> <span className="">address</span></span>
+                    </button>
+                    <form className="d-inline-block bg-white ms-2 h-75 w-50 text-white">C</form>
+                    <button className="btn h-100 " style={{'width':'4%'}}>D</button>
+                    <button className="btn h-100 " style={{'width':'10%'}}>e</button>
+                    <button className='btn h-100 ' style={{'width':'5%'}}>E</button>
+                    <button className="btn h-100" style={{'width':'5%'}}>F</button>
+                </div>
                 <div className="d_header_bottom"></div>
             </header>
             <div className="d_main">
