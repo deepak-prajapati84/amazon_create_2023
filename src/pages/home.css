@@ -23,6 +23,20 @@ header{
     color:white;
 }
 
+.d_header_bottom a:hover{
+    border: 1px solid #fff;
+}
+
+.d_header_bottom a:active,.d_header_bottom a:focus{
+    color:gray !important;
+}
+
+.d_header_bottom a{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 11px;
+}
+
 .d_main{
     height: 5899px;
     background: #e3e6e6;

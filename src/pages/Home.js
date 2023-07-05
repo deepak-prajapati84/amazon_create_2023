@@ -6,27 +6,79 @@ import img3 from "../sliders/imgs/4.jpg"
 import img4 from "../sliders/imgs/5.jpg"
 import img5 from "../sliders/imgs/6.jpg"
 import logo from '../sliders/imgs/2.png'
+import { Link } from "react-router-dom";
+import imgbottom from '../sliders/imgs/imgs1.jpg';
 
 
 function Home() {
     return (
         <>
             <header className="">
-                <div className="d_header_top p-1">
-                    <button className="btn h-100" style={{'width':'9%'}}>
+                <div className="d_header_top p-1 " >
+                    <button className="btn h-100" style={{ 'width': '9%' }}>
                         <img src={logo} className="img-fluid align-baseline logo_img w-100" />
                     </button>
-                    <button className="btn h-100 lh-1 p-0" style={{'width':'12%'}}>
+                    <button className="btn h-100 lh-1 p-0" style={{ 'width': '12%' }}>
                         Hello
                         <span className="fw-bolder d-block">Select <span className="">your</span> <span className="">address</span></span>
                     </button>
                     <form className="d-inline-block bg-white ms-2 h-75 w-50 text-white">C</form>
-                    <button className="btn h-100 " style={{'width':'4%'}}>D</button>
-                    <button className="btn h-100 " style={{'width':'10%'}}>e</button>
-                    <button className='btn h-100 ' style={{'width':'5%'}}>E</button>
-                    <button className="btn h-100" style={{'width':'5%'}}>F</button>
+                    <button className="btn h-100 " style={{ 'width': '4%' }}>D</button>
+                    <button className="btn h-100 " style={{ 'width': '10%' }}>e</button>
+                    <button className='btn h-100 ' style={{ 'width': '5%' }}>E</button>
+                    <button className="btn h-100" style={{ 'width': '5%' }}>F</button>
                 </div>
-                <div className="d_header_bottom"></div>
+                <div className="d_header_bottom ">
+                    <ul className="ms-2 nav float-start">
+                        <li className="nav-item">
+                            <Link className="nav-link text-white fw-bold"  to="#">
+                                All
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link text-white" to="#">Amazon miniTV</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link text-white" to="#">Sell</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link text-white">Best Sellers</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link text-white"  to="#">Today's Deals</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link text-white"  to="#">Mobiles</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link text-white" to="#">Customer Service</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link text-white" to="#">New Releases</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link text-white">Prime</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link text-white "  to="#">Electronics</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link text-white" to="#">Home & Kitchen</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link text-white">Amazon Pay</Link>
+                        </li>
+                    </ul>
+
+                    <Link className="p-0 m-0 float-end">
+                        <img src={imgbottom} alt="" />
+                    </Link>
+                    <ul className="nav ms-2 float-start d-none">
+                        <li className="nav-item">
+                            <Link className="nav-link text-white">Amazon Pay</Link>
+                        </li>
+                    </ul>
+                </div>
             </header>
             <div className="d_main">
                 <div className="d_main_top position-relative">
@@ -124,7 +176,7 @@ function Home() {
                             </div>
                         </div>
                         <div className="d_main_bottom_5 d_main_com_5_6">
-                        <div id="carouselExample3" class="carousel slide">
+                            <div id="carouselExample3" class="carousel slide">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <div className='img_Cont2'>A</div>
@@ -171,7 +223,7 @@ function Home() {
                         </div>
                         <div className="d_main_bottom_7 main_d_bottom main_com_margin"></div>
                         <div className="d_main_bottom_8 d_main_com_5_6">
-                        <div id="carouselExample5" class="carousel slide">
+                            <div id="carouselExample5" class="carousel slide">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <div className='img_Cont2'>A</div>
