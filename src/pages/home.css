@@ -11,6 +11,7 @@ header{
 .d_header_top{
     height: 60px;
     background:#131921;
+    z-index: 1000;
 }
 
 .d_header_top>button{
@@ -35,6 +36,17 @@ header{
     font-size: 14px;
     font-weight: 500;
     padding: 8px 11px;
+}
+
+.header_modal{
+    width:24% !important;
+    height: 772px;
+    transition: all 0.2s linear 0.2s;
+    left:-368px;
+}
+
+.show{
+    left:0px;
 }
 
 .d_main{

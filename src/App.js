@@ -10,7 +10,6 @@ let App=()=>{
                 <Routes>
                     <Route path='/'>
                         <Route path='home' index element={<Home />}></Route>
-                        <Route></Route>
                     </Route>
                 </Routes>
             </BrowserRouter>

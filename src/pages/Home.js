@@ -1,4 +1,3 @@
-import React from "react";
 import './home.css';
 import img1 from "../sliders/imgs/2.jpg"
 import img2 from "../sliders/imgs/3.jpg"
@@ -8,13 +7,35 @@ import img5 from "../sliders/imgs/6.jpg"
 import logo from '../sliders/imgs/2.png'
 import { Link } from "react-router-dom";
 import imgbottom from '../sliders/imgs/imgs1.jpg';
+import { useState } from 'react';
 
 
 function Home() {
+
+    let handleScroll = () => {
+        console.log("ONOKJKSDJSH----->", window.scrollY);
+    }
+    window.addEventListener('scroll', handleScroll);
+
     return (
         <>
+            <div className="modal p-0 m-0 header_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="p-0 m-0 modal-dialog modal-dialog-scrollable modal_Op">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h1 className="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" className="border fs-4 btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div  className="modal-body">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo rerum atque quis dignissimos neque quae, quasi voluptates amet qui nostrum deserunt dolorem libero? Quasi nobis numquam soluta. Ducimus vero rerum quia exercitationem dicta doloribus delectus cupiditate dolorum. Ullam sunt dolore veniam, nisi a debitis, rerum placeat nulla perferendis dignissimos possimus! Aliquam recusandae blanditiis qui alias! Totam eos quod adipisci! Minus.</p>
+                           <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <header className="">
-                <div className="d_header_top p-1 " >
+                <div className={"p-1 w-100 d_header_top"}>
                     <button className="btn h-100" style={{ 'width': '9%' }}>
                         <img src={logo} className="img-fluid align-baseline logo_img w-100" />
                     </button>
@@ -31,7 +52,7 @@ function Home() {
                 <div className="d_header_bottom ">
                     <ul className="ms-2 nav float-start">
                         <li className="nav-item">
-                            <Link className="nav-link text-white fw-bold"  to="#">
+                            <Link className="nav-link text-white fw-bold" to="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 All
                             </Link>
                         </li>
@@ -45,10 +66,10 @@ function Home() {
                             <Link className="nav-link text-white">Best Sellers</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white"  to="#">Today's Deals</Link>
+                            <Link className="nav-link text-white" to="#">Today's Deals</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white"  to="#">Mobiles</Link>
+                            <Link className="nav-link text-white" to="#">Mobiles</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link text-white" to="#">Customer Service</Link>
@@ -60,7 +81,7 @@ function Home() {
                             <Link className="nav-link text-white">Prime</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white "  to="#">Electronics</Link>
+                            <Link className="nav-link text-white " to="#">Electronics</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link text-white" to="#">Home & Kitchen</Link>
@@ -132,9 +153,9 @@ function Home() {
                                 <h4 className='d-inline'>Today's Deals</h4>
                                 <button type="button" className='btn btn-link cmn_button_link'>see all deals</button>
                             </div>
-                            <div id="carouselExample2" class="carousel slide">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
+                            <div id="carouselExample2" className="carousel slide">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
                                         <div className='img_Cont row'>
                                             <div className="col">2</div>
                                             <div className="col">2</div>
@@ -144,7 +165,7 @@ function Home() {
                                             <div className="col">2</div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item">
+                                    <div className="carousel-item">
                                         <div className='img_Cont row'>
                                             <div className="col">3</div>
                                             <div className="col">3</div>
@@ -154,7 +175,7 @@ function Home() {
                                             <div className="col">3</div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item">
+                                    <div className="carousel-item">
                                         <div className='img_Cont row'>
                                             <div className="col">1</div>
                                             <div className="col">1</div>
@@ -165,83 +186,83 @@ function Home() {
                                         </div>
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev button_next_prev rounded-end" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
+                                <button className="carousel-control-prev button_next_prev rounded-end" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next button_next_prev rounded-start" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon " aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
+                                <button className="carousel-control-next button_next_prev rounded-start" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                                    <span className="carousel-control-next-icon " aria-hidden="true"></span>
+                                    <span className="visually-hidden">Next</span>
                                 </button>
                             </div>
                         </div>
                         <div className="d_main_bottom_5 d_main_com_5_6">
-                            <div id="carouselExample3" class="carousel slide">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
+                            <div id="carouselExample3" className="carousel slide">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
                                         <div className='img_Cont2'>A</div>
                                     </div>
-                                    <div class="carousel-item">
+                                    <div className="carousel-item">
                                         <div className='img_Cont2'>B</div>
                                     </div>
-                                    <div class="carousel-item">
+                                    <div className="carousel-item">
                                         <div className='img_Cont2'>C</div>
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
+                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+                                    <span className="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
+                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+                                    <span className="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Next</span>
                                 </button>
                             </div>
                         </div>
                         <div className="d_main_bottom_6 d_main_com_5_6">
-                            <div id="carouselExample4" class="carousel slide">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
+                            <div id="carouselExample4" className="carousel slide">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
                                         <div className='img_Cont2'>A</div>
                                     </div>
-                                    <div class="carousel-item">
+                                    <div className="carousel-item">
                                         <div className='img_Cont2'>B</div>
                                     </div>
-                                    <div class="carousel-item">
+                                    <div className="carousel-item">
                                         <div className='img_Cont2'>C</div>
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
+                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
+                                    <span className="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
+                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next">
+                                    <span className="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Next</span>
                                 </button>
                             </div>
                         </div>
                         <div className="d_main_bottom_7 main_d_bottom main_com_margin"></div>
                         <div className="d_main_bottom_8 d_main_com_5_6">
-                            <div id="carouselExample5" class="carousel slide">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
+                            <div id="carouselExample5" className="carousel slide">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
                                         <div className='img_Cont2'>A</div>
                                     </div>
-                                    <div class="carousel-item">
+                                    <div className="carousel-item">
                                         <div className='img_Cont2'>B</div>
                                     </div>
-                                    <div class="carousel-item">
+                                    <div className="carousel-item">
                                         <div className='img_Cont2'>C</div>
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample5" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
+                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample5" data-bs-slide="prev">
+                                    <span className="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample5" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
+                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExample5" data-bs-slide="next">
+                                    <span className="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Next</span>
                                 </button>
                             </div>
                         </div>
