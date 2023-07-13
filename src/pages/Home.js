@@ -22,13 +22,102 @@ function Home() {
             <div className="modal p-0 m-0 header_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="p-0 m-0 modal-dialog modal-dialog-scrollable modal_Op">
                     <div className="modal-content">
-                        <div className="modal-header">
-                            <h1 className="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <div className="modal-header text-white mhclr">
+                            <h1 className="modal-title fw-bold ms-4 fs-5" id="exampleModalLabel">Hello, sign in</h1>
                             <button type="button" className="border fs-4 btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div  className="modal-body">
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo rerum atque quis dignissimos neque quae, quasi voluptates amet qui nostrum deserunt dolorem libero? Quasi nobis numquam soluta. Ducimus vero rerum quia exercitationem dicta doloribus delectus cupiditate dolorum. Ullam sunt dolore veniam, nisi a debitis, rerum placeat nulla perferendis dignissimos possimus! Aliquam recusandae blanditiis qui alias! Totam eos quod adipisci! Minus.</p>
-                           <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                        <div className="modal-body p-0 m-0">
+                            <h5 className="mt-4 ms-5">Trending</h5>
+                            <ul className="nav flex-column mhhover">
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Best Sellers</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">New Releases</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Movers and Shakers</Link>
+                                </li>
+                            </ul>
+                            <hr />
+
+                            <h5 className="ms-3">Digital Content And Devices</h5>
+                            <ul className="nav  flex-column mhhover">
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Best Sellers</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">New Releases</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Movers and Shakers</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Movers and Shakers</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Movers and Shakers</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Movers and Shakers</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Movers and Shakers</Link>
+                                </li>
+                            </ul>
+                            <hr />
+
+                            <h5 className="ms-3">Digital Content And Devices</h5>
+                            <ul className="nav  flex-column mhhover">
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Best Sellers</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">New Releases</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Movers and Shakers</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Movers and Shakers</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Movers and Shakers</Link>
+                                </li>
+                            </ul>
+                            <hr />
+
+                            <h5 className="ms-3">Digital Content And Devices</h5>
+                            <ul className="nav flex-column mhhover">
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Best Sellers</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">New Releases</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Movers and Shakers</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Movers and Shakers</Link>
+                                </li>
+                                
+                            </ul>
+                            <hr />
+
+                            <h5 className="ms-3">Digital Content And Devices</h5>
+                            <ul className="nav  flex-column mhhover">
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Best Sellers</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">New Releases</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="#">Movers and Shakers</Link>
+                                </li>
+                            </ul>
+                            <hr />
                         </div>
                     </div>
                 </div>
