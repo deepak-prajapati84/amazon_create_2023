@@ -5,9 +5,10 @@ import img3 from "../sliders/imgs/4.jpg"
 import img4 from "../sliders/imgs/5.jpg"
 import img5 from "../sliders/imgs/6.jpg"
 import logo from '../sliders/imgs/2.png'
+import primeimg from '../sliders/imgs/prime_img.jpg';
 import { Link } from "react-router-dom";
 import imgbottom from '../sliders/imgs/imgs1.jpg';
-import { useState } from 'react';
+
 
 
 function Home() {
@@ -19,6 +20,7 @@ function Home() {
 
     return (
         <>
+
             <div className="modal p-0 m-0 header_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="p-0 m-0 modal-dialog modal-dialog-scrollable modal_Op">
                     <div className="modal-content">
@@ -101,7 +103,7 @@ function Home() {
                                 <li className="nav-item">
                                     <Link className="nav-link" href="#">Movers and Shakers</Link>
                                 </li>
-                                
+
                             </ul>
                             <hr />
 
@@ -123,7 +125,68 @@ function Home() {
                 </div>
             </div>
 
-            <header className="">
+            <div className="m-5 modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content mt-5 w-75 offset-4 ">
+                        <div className="modal-body">
+                            <Link to='#'>
+                                <img className='img-fluid' src={primeimg} alt="" />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="modal w-25 p-0 m- mt-4 modal_header_contr " id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                <div className=" modal-dialog modal-sm header_modal_margin">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <div className="form-check">
+                                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                    <label className="form-check-label" for="flexRadioDefault1">
+                                        Default radio
+                                    </label>
+                            </div>
+                        </div>
+                        <div className="modal-body">
+                            <form action="">
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                        <label className="form-check-label" for="flexRadioDefault1">
+                                            Default radio
+                                        </label>
+                                </div>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                                        <label className="form-check-label" for="flexRadioDefault2">
+                                            Default checked radio
+                                        </label>
+                                </div>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                        <label className="form-check-label" for="flexRadioDefault1">
+                                            Default radio
+                                        </label>
+                                </div>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                        <label className="form-check-label" for="flexRadioDefault1">
+                                            Default radio
+                                        </label>
+                                </div>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                        <label className="form-check-label" for="flexRadioDefault1">
+                                            Default radio
+                                        </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <header>
                 <div className={"p-1 w-100 d_header_top"}>
                     <button className="btn h-100" style={{ 'width': '9%' }}>
                         <img src={logo} className="img-fluid align-baseline logo_img w-100" />
@@ -132,8 +195,39 @@ function Home() {
                         Hello
                         <span className="fw-bolder d-block">Select <span className="">your</span> <span className="">address</span></span>
                     </button>
-                    <form className="d-inline-block bg-white ms-2 h-75 w-50 text-white">C</form>
-                    <button className="btn h-100 " style={{ 'width': '4%' }}>D</button>
+                    <form className="d-inline-block text-center rounded bg-white ms-2 h-75 w-50 text-white h_from">
+                        <div className="row m-0 p-0">
+                            <div className="col-1 p-0 m-0 rounded dropdown b_clr">
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn dropdown-toggle text-center bu_focs" data-bs-toggle="dropdown" aria-expanded="false">All</button>
+                                    <ul className="dropdown-menu">
+                                        <li><Link className="dropdown-item" href="#">Action</Link></li>
+                                        <li><Link className="dropdown-item" href="#">Another action</Link></li>
+                                        <li><Link className="dropdown-item" href="#">Something else here</Link></li>
+                                        <li><Link className="dropdown-item" href="#">Action</Link></li>
+                                        <li><Link className="dropdown-item" href="#">Another action</Link></li>
+                                        <li><Link className="dropdown-item" href="#">Something else here</Link></li>
+                                        <li><Link className="dropdown-item" href="#">Action</Link></li>
+                                        <li><Link className="dropdown-item" href="#">Another action</Link></li>
+                                        <li><Link className="dropdown-item" href="#">Something else here</Link></li>
+                                        <li><Link className="dropdown-item" href="#">Action</Link></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className='col-10 p-0'>
+                                <input
+                                    type="text"
+                                    className="form-control form_inpt_bor"
+                                    placeholder='Search Amazon.in'
+                                />
+                            </div>
+                            <div className="col-1 p-0 from_bgc">C</div>
+                        </div>
+                    </form>
+
+                    <button class="btn p-3 ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal3" style={{ 'width': '4%' }}>EN</button>
+
+
                     <button className="btn h-100 " style={{ 'width': '10%' }}>e</button>
                     <button className='btn h-100 ' style={{ 'width': '5%' }}>E</button>
                     <button className="btn h-100" style={{ 'width': '5%' }}>F</button>
@@ -166,8 +260,8 @@ function Home() {
                         <li className="nav-item">
                             <Link className="nav-link text-white" to="#">New Releases</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link text-white">Prime</Link>
+                        <li className="nav-item prime_hbr">
+                            <Link className="nav-link text-white" to="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">Prime</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link text-white " to="#">Electronics</Link>

@@ -14,6 +14,26 @@ header{
     z-index: 1000;
 }
 
+.h_from{
+    border: 1px solid #febd69;
+    box-shadow: 2px 1px 2px 1px #febd69 ;
+}
+.b_clr{
+    background:#f3f3f3;
+    color:rgb(96, 86, 86);
+    font-size:14px;
+}
+.bu_focs:focus{
+    border: none !important;
+}
+.form_inpt_bor:focus{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.from_bgc{
+    background: #febd69;
+}
 .d_header_top>button{
     color:white;
     margin-left: 7px;
@@ -38,11 +58,17 @@ header{
     padding: 8px 11px;
 }
 
+
 .header_modal{
     width:24% !important;
     height: 772px;
     transition: all 0.2s linear 0.2s;
     left:-368px;
+}
+
+.modal_header_contr{
+    width: 20%;
+    left: 1060px !important;
 }
 
 .show{
