@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+
 header{
     height:100px;
     background: #232f3e;
+}
+
+button:focus{
+    box-shadow: none !important;
 }
 .d_header_top{
     height: 60px;

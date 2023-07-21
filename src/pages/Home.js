@@ -8,6 +8,7 @@ import logo from '../sliders/imgs/2.png'
 import primeimg from '../sliders/imgs/prime_img.jpg';
 import { Link } from "react-router-dom";
 import imgbottom from '../sliders/imgs/imgs1.jpg';
+import Flag from "react-world-flags";
 
 
 
@@ -17,6 +18,7 @@ function Home() {
         console.log("ONOKJKSDJSH----->", window.scrollY);
     }
     window.addEventListener('scroll', handleScroll);
+    
 
     return (
         <>
@@ -180,7 +182,35 @@ function Home() {
                                             Default radio
                                         </label>
                                 </div>
+                                <div className='modal-footer p-0 m-0'>
+                                    <p> <Flag code='in' className="me-3" height={16} />You are shopping on Amazon.in</p>
+                                    <Link to="#" className="btn text-primary p-0 m-0 me-5">Change country/region</Link>
+                                </div>
                             </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="modal w-100 p-0 m-0 mt-4" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                <div className=" modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header d-block p-0 m-3">
+                            <button className='btn ps-5 pe-5 mb-3 offset-4 text-primary bg-info '>Sign in</button>
+                            <p className='p-0 m-0'>New Customer? <Link className='ms-1 btn p-0 m-0' to="#">Start here</Link> </p>
+                        </div>
+                        <div className="modal-body">
+                            <div className="row">
+                                <div className="col-sm-6 ">
+                                    <h6>Your List</h6>
+                                    <Link to="#">Create a Wish List</Link>
+                                    <Link to="#">Wish from Any website</Link>
+                                    <Link to="#">Baby Wishlist</Link>
+                                    <Link to="#">Discover Your Style</Link>
+                                    <Link to="#">explore Showroom</Link>
+                                </div>
+                                <div className="col-6">B</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -225,12 +255,20 @@ function Home() {
                         </div>
                     </form>
 
-                    <button class="btn p-3 ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal3" style={{ 'width': '4%' }}>EN</button>
+                    <button className="btn p-3 ms-2" style={{ 'width': '4%' }} data-bs-toggle="modal" data-bs-target="#exampleModal3">EN</button>
 
 
-                    <button className="btn h-100 " style={{ 'width': '10%' }}>e</button>
-                    <button className='btn h-100 ' style={{ 'width': '5%' }}>E</button>
-                    <button className="btn h-100" style={{ 'width': '5%' }}>F</button>
+                    <button className="fs-6 btn h-100 p-0 m-0 " data-bs-toggle="modal" data-bs-target="#exampleModal4" style={{ 'width': '10%' }}>
+                        <div>Hello, sign in</div>
+                        <span className="fw-bolder">Account &amp; lists </span>
+                    </button>
+                    <button className='fs-6 p-0 m-0 btn h-100 ' style={{ 'width': '5%' }}>
+                        <div>Returns</div>
+                        <span className="fw-bold ms-1">&amp; Order</span>
+                    </button>
+                    <button className="btn h-100" style={{ 'width': '5%' }}>
+                        Cart
+                    </button>
                 </div>
                 <div className="d_header_bottom ">
                     <ul className="ms-2 nav float-start">
