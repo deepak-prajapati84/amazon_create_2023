@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 header{
     height:100px;
     background: #232f3e;
@@ -17,6 +16,27 @@ button:focus{
     height: 60px;
     background:#131921;
     z-index: 1000;
+}
+
+.header_modal_sign_in a{
+    font-size: 14px !important;
+    color: rgba(27, 19, 19, 0.91);
+    padding: 2px !important;
+}
+
+.header_modal_sign_in a:hover{
+    text-decoration: underline;
+    color: #f0c352;
+}
+
+.header_sign_cont{
+    left:425px !important;
+    top:29.6px !important;
+}
+
+.hello_sign_in{
+    font-size: 13px !important;
+    padding-right:30px !important;
 }
 
 .h_from{
@@ -111,6 +131,17 @@ button:focus{
 .main_d_bottom{
     height:420px;
     margin:0px;
+}
+
+.mainbox1_col{
+    height:395px;
+    border: 1px solid black;
+}
+.d_main1_inner{
+    border:1px solid red;
+}
+.d_main1_inner div{
+    height:92%;
 }
 
 .main_com_margin{

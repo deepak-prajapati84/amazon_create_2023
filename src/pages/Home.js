@@ -18,7 +18,7 @@ function Home() {
         console.log("ONOKJKSDJSH----->", window.scrollY);
     }
     window.addEventListener('scroll', handleScroll);
-    
+
 
     return (
         <>
@@ -145,42 +145,42 @@ function Home() {
                         <div className="modal-header">
                             <div className="form-check">
                                 <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                    <label className="form-check-label" for="flexRadioDefault1">
-                                        Default radio
-                                    </label>
+                                <label className="form-check-label" for="flexRadioDefault1">
+                                    Default radio
+                                </label>
                             </div>
                         </div>
                         <div className="modal-body">
                             <form action="">
                                 <div className="form-check">
                                     <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                        <label className="form-check-label" for="flexRadioDefault1">
-                                            Default radio
-                                        </label>
+                                    <label className="form-check-label" for="flexRadioDefault1">
+                                        Default radio
+                                    </label>
                                 </div>
                                 <div className="form-check">
                                     <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                                        <label className="form-check-label" for="flexRadioDefault2">
-                                            Default checked radio
-                                        </label>
+                                    <label className="form-check-label" for="flexRadioDefault2">
+                                        Default checked radio
+                                    </label>
                                 </div>
                                 <div className="form-check">
                                     <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                        <label className="form-check-label" for="flexRadioDefault1">
-                                            Default radio
-                                        </label>
+                                    <label className="form-check-label" for="flexRadioDefault1">
+                                        Default radio
+                                    </label>
                                 </div>
                                 <div className="form-check">
                                     <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                        <label className="form-check-label" for="flexRadioDefault1">
-                                            Default radio
-                                        </label>
+                                    <label className="form-check-label" for="flexRadioDefault1">
+                                        Default radio
+                                    </label>
                                 </div>
                                 <div className="form-check">
                                     <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                        <label className="form-check-label" for="flexRadioDefault1">
-                                            Default radio
-                                        </label>
+                                    <label className="form-check-label" for="flexRadioDefault1">
+                                        Default radio
+                                    </label>
                                 </div>
                                 <div className='modal-footer p-0 m-0'>
                                     <p> <Flag code='in' className="me-3" height={16} />You are shopping on Amazon.in</p>
@@ -192,24 +192,76 @@ function Home() {
                 </div>
             </div>
 
-            <div className="modal w-100 p-0 m-0 mt-4" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+            <div className="modal w-100 p-0 m-0 header_modal_sign_in" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
                 <div className=" modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header d-block p-0 m-3">
-                            <button className='btn ps-5 pe-5 mb-3 offset-4 text-primary bg-info '>Sign in</button>
+                    <div className="modal-content header_sign_cont">
+                        <div className="modal-header text-center d-block p-0 m-3">
+                            <button className='btn ps-5 pe-5 w-50 mb-1  text-primary bg-info '>Sign in</button>
                             <p className='p-0 m-0'>New Customer? <Link className='ms-1 btn p-0 m-0' to="#">Start here</Link> </p>
                         </div>
                         <div className="modal-body">
                             <div className="row">
                                 <div className="col-sm-6 ">
-                                    <h6>Your List</h6>
-                                    <Link to="#">Create a Wish List</Link>
-                                    <Link to="#">Wish from Any website</Link>
-                                    <Link to="#">Baby Wishlist</Link>
-                                    <Link to="#">Discover Your Style</Link>
-                                    <Link to="#">explore Showroom</Link>
+                                    <ul className="nav flex-column">
+                                        <h6>Your List</h6>
+                                        <li className="nav-item">
+                                            <Link className="nav-link p-0"  href="#">Create a Wish List</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link p-0" href="#">Wish From Any Website</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link p-0" href="#">Baby Wishlist</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link p-0">Discover Your Style</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link p-0">Explore Showroom</Link>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div className="col-6">B</div>
+                                <div className="col-6 p-0 m-0">
+                                    <h6>Your Accounts</h6>
+                                    <ul className="nav p-0 m-0 flex-column">
+                                        <li className="nav-item ">
+                                            <Link className="nav-link p-0" href="#">Your Account</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link p-0" href="#">Your Order</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link p-0" href="#">Your Wish List</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link p-0">Your Recommendations</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link p-0">Your Prime Membership</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link p-0">Your Recommendations</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link p-0">Your Prime Video</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link p-0">Your Subscribe & Save Items</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link p-0">Memberships & Subscriptions</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link p-0">Your Seller Account</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link p-0">Manage Your Content and Devices</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className="nav-link p-0">Your Free Amazon Business Account</Link>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -258,14 +310,16 @@ function Home() {
                     <button className="btn p-3 ms-2" style={{ 'width': '4%' }} data-bs-toggle="modal" data-bs-target="#exampleModal3">EN</button>
 
 
-                    <button className="fs-6 btn h-100 p-0 m-0 " data-bs-toggle="modal" data-bs-target="#exampleModal4" style={{ 'width': '10%' }}>
-                        <div>Hello, sign in</div>
-                        <span className="fw-bolder">Account &amp; lists </span>
+                    <button className="btn h-100 p-0 m-0" data-bs-toggle="modal" data-bs-target="#exampleModal4" style={{ 'width': '10%' }}>
+                        <div className="hello_sign_in">Hello, sign in</div>
+                        <span className="fw-bolder ">Account &amp; lists </span>
                     </button>
+
                     <button className='fs-6 p-0 m-0 btn h-100 ' style={{ 'width': '5%' }}>
                         <div>Returns</div>
                         <span className="fw-bold ms-1">&amp; Order</span>
                     </button>
+
                     <button className="btn h-100" style={{ 'width': '5%' }}>
                         Cart
                     </button>
@@ -322,6 +376,7 @@ function Home() {
                     </ul>
                 </div>
             </header>
+
             <div className="d_main">
                 <div className="d_main_top position-relative">
                     <div id="carouselExample" className="carousel slide">
@@ -353,10 +408,41 @@ function Home() {
                     </div>
                     <div className="position-absolute d_main_bottom">
                         <div className="row d_main_bottom_1 main_d_bottom">
-                            <div className="col">A</div>
-                            <div className="col">B</div>
-                            <div className="col">C</div>
-                            <div className="col">D</div>
+                            <div className="col p-2">
+                                <div className="mainbox1_col p-3">
+                                    <div className="w-100 h-100 d_main1_inner">
+                                        <div className="bg-primary w-100">ASD</div>
+                                        <Link className='btn fs-6 m-0 p-0 btn-link cmn_button_link' to='#'>See more</Link>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="col p-2">
+                                <div className="mainbox1_col p-3">
+                                    <div className="w-100 h-100 d_main1_inner">
+                                        <div className="bg-primary w-100">ASD</div>
+                                        <Link className='btn fs-6 m-0 p-0 btn-link cmn_button_link' to='#'>See more</Link>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col p-2">
+                                <div className="mainbox1_col p-3">
+                                    <div className="w-100 h-100 d_main1_inner">
+                                        <div className="bg-primary w-100">ASD</div>
+                                        <Link className='btn fs-6 m-0 p-0 btn-link cmn_button_link' to='#'>See more</Link>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col p-2">
+                                <div className="mainbox1_col p-3">
+                                    <div className="w-100 h-100 d_main1_inner">
+                                        <div className="bg-primary w-100">ASD</div>
+                                        <Link className='btn fs-6 m-0 p-0 btn-link cmn_button_link' to='#'>See more</Link>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className="row d_main_bottom_2 main_com_margin main_d_bottom">
                             <div className="col">A</div>
