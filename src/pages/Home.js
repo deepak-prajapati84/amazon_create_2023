@@ -8,6 +8,10 @@ import logo from '../sliders/imgs/2.png'
 import primeimg from '../sliders/imgs/prime_img.jpg';
 import { Link } from "react-router-dom";
 import imgbottom from '../sliders/imgs/imgs1.jpg';
+import m from '../main_img/M.jpg';
+import m1 from '../main_img/M1.jpg';
+import m2 from '../main_img/M2.jpg';
+import c1 from '../main_img/1.jpg';
 import Flag from "react-world-flags";
 
 
@@ -411,7 +415,12 @@ function Home() {
                             <div className="col p-2">
                                 <div className="mainbox1_col p-3">
                                     <div className="w-100 h-100 d_main1_inner">
-                                        <div className="bg-primary w-100">ASD</div>
+                                        <div className="bg-primary w-100">
+                                            <h4 className="fs-5">Up to 70% off | Clearance store</h4>
+                                            <Link className="btn p-0" to="#">
+                                                <img src={c1} className="img-fluid" />
+                                            </Link>
+                                        </div>
                                         <Link className='btn fs-6 m-0 p-0 btn-link cmn_button_link' to='#'>See more</Link>
                                     </div>
                                 </div>
@@ -420,7 +429,35 @@ function Home() {
                             <div className="col p-2">
                                 <div className="mainbox1_col p-3">
                                     <div className="w-100 h-100 d_main1_inner">
-                                        <div className="bg-primary w-100">ASD</div>
+                                        <div className=" w-100">
+                                            <h4 className="fs-5">Up to 60% off | Styles for men</h4>
+                                            <div className="row m-0 p-0 d_main_inner_cont">
+                                                <div className="col-6 p-0">
+                                                    <Link className="btn p-0 w-100 text-start rounded-0 h-100 " to="#">
+                                                        <img src={m} className="img-fluid p-0 h-75" />
+                                                        plugs & more
+                                                    </Link>
+                                                </div>
+                                                <div className="col-6 ps-1 p-0">
+                                                    <Link className="btn w-100 p-0 text-start rounded-0 h-100 " to="#">
+                                                        <img src={m1} className="img-fluid p-0 h-75" />
+                                                        Bathroom hardware
+                                                    </Link>
+                                                </div>
+                                                <div className="col-6 p-0">
+                                                    <Link className="btn w-100 text-start rounded-0 p-0 h-100 " to="#">
+                                                        <img src={m2} className="img-fluid p-0 h-75" />
+                                                        Cleaning Spin mops
+                                                    </Link>
+                                                </div>
+                                                <div className="col-6 p-0 ps-1">
+                                                    <Link className="btn w-100 text-start rounded-0  p-0 h-100 " to="#">
+                                                        <img src={m} className="img-fluid p-0 h-75" />
+                                                        plugs & more
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <Link className='btn fs-6 m-0 p-0 btn-link cmn_button_link' to='#'>See more</Link>
                                     </div>
                                 </div>
@@ -437,9 +474,12 @@ function Home() {
 
                             <div className="col p-2">
                                 <div className="mainbox1_col p-3">
-                                    <div className="w-100 h-100 d_main1_inner">
-                                        <div className="bg-primary w-100">ASD</div>
-                                        <Link className='btn fs-6 m-0 p-0 btn-link cmn_button_link' to='#'>See more</Link>
+                                    <div className="row ">
+                                        <div className="col-md-12 mb-3 bg-danger" style={{"height":150+"px"}}>
+                                            <h4 className="fs-4 mb-3">Sign in for your best experience</h4>
+                                            <button className="w-100 rounded border border-secondary bg-warning btn">Sign in securely</button>
+                                        </div>
+                                        <div className="col-md-12 bg-info " style={{"height":212+"px"}}>a</div>
                                     </div>
                                 </div>
                             </div>
